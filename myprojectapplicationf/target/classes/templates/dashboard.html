@@ -1,0 +1,122 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CBT Dashboad</title>
+</head>
+<body>
+<h1 >Welcome <span th:text="${session.username}"></span></h1>
+<h1>User Information Form</h1>
+<form action="userdetails" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required><br><br>
+
+  <label for="fname">First Name:</label>
+  <input type="text" id="fname" name="fname" required><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" required><br><br>
+
+  <label for="lname">Last Name:</label>
+  <input type="text" id="lname" name="lname" required><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Information Form</title>
+  <style>
+    body{
+      background-color: #45a049;
+      font-family: Arial, sans-serif;
+    }
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .form-group button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<h1 >Welcome <span th:text="${session.username}"></span></h1>
+<!--
+<h2>Your Profile Data</h2>
+
+<table>
+  <tr>
+    <td>Full name: </td><td><span th:text="${userdetail.fname}"></span></td>
+  </tr>
+  <tr>
+    <td>Last name: </td><td><span th:text="${userdetail.lname}"></span></td>
+  </tr>
+  <tr>
+    <td>Email: </td><td><span th:text="${userdetail.email}"></span></td>
+  </tr>
+  <tr>
+    <td>Phone: </td><td><span th:text="${userdetail.phone}"></span></td>
+  </tr>
+</table>   -->
+
+<div class="form-container">
+  <form action="userdetails" method="post">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" required>
+    </div>
+    <div class="form-group">
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

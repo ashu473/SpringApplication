@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Sharda CBT</title>
+    <style>
+        body {
+            background-color: darkslategrey;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 50px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="signup" method="post">
+        <div class="input-group">
+        <h2>SIGNUP</h2>
+        <label for="usernameSignup">USERNAME</label>
+        <input type="text" id="usernameSignup" name="username" placeholder="Enter username"> <br>
+
+        <label for="passwordSignup">PASSWORD</label>
+        <input type="password" id="passwordSignup" name="password" placeholder="Enter your password"><br><br>
+
+        <input type="submit" value="SIGNUP" class="btn">
+        </div>
+
+    </form>
+</div>
+
+<div class="container">
+    <form action="login" method="post">
+        <div class="input-group">
+        <h2>LOGIN</h2>
+        <label for="usernameLogin">USERNAME:</label>
+        <input type="text" id="usernameLogin" name="username" placeholder="Enter your username"> <br> <br>
+
+        <label for="passwordLogin">PASSWORD:</label>
+        <input type="password" id="passwordLogin" name="password" placeholder="Enter your password"><br><br>
+
+        <input type="submit" value="LOGIN" class="btn">
+        </div>
+    </form>
+</div>
+</body>
+</html>
